@@ -1,0 +1,47 @@
+#include "functions.h"
+
+short compare_rectangles(int l1, int w1, int l2, int w2) {
+	int area1 = l1 * w1;
+	int area2 = l2 * w2;
+	if (l1 < 0 || w1 < 0 || l2 < 0 || w2 < 0) {
+		return -2;
+	} else if (area1 < area2) {
+		return -1;
+	} else if (area2 < area1) {
+		return 1;
+	} else {
+		return 0;
+}
+
+int ith_factor(int a, int b, int i) {
+	int counter = 0;
+	int j;
+	if (i <= 0 || a == 0 || b == 0 ) {
+		return -1;
+	}
+
+	if (a < 0) {
+		a = a * -1;
+	}
+	if (b < 0) {
+		b = b * -1;
+	}
+	for (j = 0; j < a; j++) {
+		if (a % j == 0 && b % j == 0) {
+			counter++;
+			if (counter == i) {
+			return j;
+			}
+		}
+	}
+	return -1;
+}
+
+long pell(short n) {
+	if (n == 0) {
+		return 0;
+	} else if (n == 1) {
+		return 1;
+	} else {
+		return 2 * pell(n - 1) + pell(n - 2);
+}

@@ -1,0 +1,12 @@
+#!/bin/tcsh -f
+
+# CMSC 216, Spring 2023, Project #10
+# Public test 14 (public14)
+#
+# Tests running the third program to compute the number of digits in the
+# number 65535 in base 16.
+#
+# (c) Larry Herman, 2023.  You are allowed to use this code yourself, but
+# not to provide it to anyone else.
+
+spim -file prog3.s < public14.inputdata | tail -n +2

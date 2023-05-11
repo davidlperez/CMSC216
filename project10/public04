@@ -1,0 +1,12 @@
+#!/bin/tcsh -f
+
+# CMSC 216, Spring 2023, Project #10
+# Public test 4 (public04)
+#
+# Tests running the second program to compute the number of digits in the
+# number 2 in base 10.
+#
+# (c) Larry Herman, 2023.  You are allowed to use this code yourself, but
+# not to provide it to anyone else.
+
+spim -file prog2.s < public04.inputdata | tail -n +2

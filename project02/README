@@ -1,0 +1,17 @@
+                      Commands to run the public tests
+
+1. lengthwarning.x < public1.input | diff - public1.output
+
+2. lengthwarning.x < public2.input | diff - public2.output
+
+3. lengthwarning.x < public3.input | diff - public3.output
+
+4. lengthwarning.x < public4.input | diff - public4.output
+
+5. lengthwarning.x < public5.input | diff - public5.output
+
+6. lengthwarning.x < public6.input | diff - public6.output
+
+7. lengthwarning.x < public7.input | diff - public7.output
+
+8. lengthwarning.x < public8.input | problemlines.x | diff - public8.output
